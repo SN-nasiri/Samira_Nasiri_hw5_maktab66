@@ -1,3 +1,44 @@
 .l1{
     border: 15px solid green;
 }
+.navbar{
+    position: absolute;
+    margin-right: 100px;
+}
+ul.menu li{
+    display: inline-block;
+    list-style: none;
+}
+ul.menu li a {
+    display: block;
+    color: black;
+    padding-right:50px;
+    text-decoration: none;
+}
+ul.menu li a:hover{
+    background-color: green;
+    border-radius: 25px;
+    /* padding: 5px; */
+    color: white;
+    padding:5px 10px;
+}
+.shop{
+    direction: ltr;
+    text-align: left;
+    padding-left: 80px;
+}
+ul.menu1 li{
+    display: inline-block;
+    list-style: none;
+}
+ul.menu1 li a{
+    display: block;
+    color: white;
+    padding:10px;
+    text-decoration: none;
+}
+.shopping{
+    background-color:green;
+    border-radius: 30px;
+    padding:0px 15px;
+}
