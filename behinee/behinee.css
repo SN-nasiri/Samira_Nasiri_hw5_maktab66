@@ -3,7 +3,7 @@
 }
 .navbar{
     position: absolute;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 ul.menu li{
     display: inline-block;
@@ -18,9 +18,9 @@ ul.menu li a {
 ul.menu li a:hover{
     background-color: green;
     border-radius: 25px;
-    /* padding: 5px; */
     color: white;
     padding:5px 10px;
+    cursor:pointer;
 }
 .shop{
     direction: ltr;
@@ -41,4 +41,13 @@ ul.menu1 li a{
     background-color:green;
     border-radius: 30px;
     padding:0px 15px;
+}
+.hr{
+    box-shadow:2px 2px 10px #888888;
+}
+.logo{
+    width: 10%;
+    height: 2%;
+    float: right;
+    padding-right:5%;
 }
