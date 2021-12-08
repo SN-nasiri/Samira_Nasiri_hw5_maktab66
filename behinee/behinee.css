@@ -51,6 +51,27 @@ ul.menu1 li a{
     float: right;
     padding-right:5%;
 }
-h1{
+.h2{
     text-align: center;
+}
+div.gallery {
+    float:left;
+    width: 30%;
+
+}
+ div.gallery img {
+    background-color: yellow;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-right: 28%;
+}
+div.doc {
+    padding: 15px;
+    text-align:center;
+}
+.second-child{
+    margin-right: 5%;
+    margin-left: 5%;
 }
