@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('./font/IRANSansWeb.woff');    
+  }
+body {
+  font-family: iransans , Tahma ,IRANSans;
+}
 .l1{
-    border: 15px solid green;
+    border: 15px solid #0f9d41;
 }
 .navbar{
     position: absolute;
@@ -16,7 +23,7 @@ ul.menu li a {
     text-decoration: none;
 }
 ul.menu li a:hover{
-    background-color: green;
+    background-color: #0f9d41;
     border-radius: 25px;
     color: white;
     padding:5px 10px;
@@ -38,7 +45,7 @@ ul.menu1 li a{
     text-decoration: none;
 }
 .shopping{
-    background-color:green;
+    background-color:#0f9d41;
     border-radius: 30px;
     padding:0px 15px;
 }
@@ -54,24 +61,110 @@ ul.menu1 li a{
 .h2{
     text-align: center;
 }
-div.gallery {
-    float:left;
-    width: 30%;
-
+.h2-1{
+    text-align: center;
+    color:#0f9d41
 }
- div.gallery img {
-    background-color: yellow;
-    width: 180px;
-    height: 180px;
+.baner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(102 , 99 ,99);
+}
+.ban{
+    display: flex;
+    justify-content: center;
+}
+.docs{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40%;
+}
+.imgDv1{
+    background-image: url("./image/coins.png");
+    background-color: #ffca1d;
     border-radius: 50%;
-    margin-top: 10%;
-    margin-right: 28%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    width: 100px;
+    height: 100px;
+    float: inline-start;
 }
-div.doc {
-    padding: 15px;
+.imgDv2{
+    background-image: url("./image/multipleUsers.png");
+    background-color: #ffca1d;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    width: 100px;
+    height: 100px;
+    
+}
+.imgDv3{
+    background-image: url("./image/leaf.png");
+    background-color: #ffca1d;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    width: 100px;
+    height: 100px;
+    
+}
+.p{
     text-align:center;
 }
-.second-child{
-    margin-right: 5%;
-    margin-left: 5%;
+/* --------------- */
+.box{
+    direction:rtl;
+    background: #e9ecef;
+    color: #000;
+    padding: 10px;
+    height: 250px;
+    border-radius: 3px;
+}
+/* ----------------- */
+div.album {
+    float:right;
+    width: 20%;
+    object-position: center;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 5px;
+}
+ div.album img {
+    width: 40%;
+    height:40% ;
+    margin-top: 20%;
+    margin-right: 20%;
+}
+div.doc2 {
+    padding-right: 25%;
+    color:#0f9d41
+} 
+.first-childe{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.second-childs{
+    margin-right: 1%;
+    margin-left: 1%;
+} 
+.third-childe{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.fouth-childe{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+div.album {
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.2);
+    padding-right: 1%;
+}
+div.album:hover {
+    border: 1px solid #777;
 }
