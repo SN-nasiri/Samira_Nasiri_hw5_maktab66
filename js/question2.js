@@ -1,4 +1,36 @@
 const maxBigInt = {
+  max: function () {
+    if (arguments.length === 0) {
+      return null;
+    }
+    try {
+      this.maximum = BigInt(Number.MAX_SAFE_INTEGER);
+      for (let val of arguments) {
+        if (typeof val !== "bigint") {
+          if (
+            val > Number.MAX_SAFE_INTEGER ||
+            val === ""
+          ) {
+            throw "BIG ERROR";
+          } else {
+            val = BigInt(val);
+          }
+        }
+        if (val > this.maximum) {
+          this.maximum = val;
+        }
+      }
+  return this.maximum;
+}catch (error) {
+  console.error(error);
+}
+  },
+};
+console.log(maxBigInt.max("")); //➞ "Big Error"
+console.log(maxBigInt.max("10" / 2)); //➞ 5n
+
+/*
+const maxBigInt = {
   maximum : Number.MAX_SAFE_INTEGER,
   max : function() {
     const array = [];
@@ -47,4 +79,4 @@ const maxBigInt = {
   } catch (err) {
     console.log("Big Error");
   }
-  
+  */
